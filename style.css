@@ -1,0 +1,437 @@
+@font-face {
+    font-family: attila;
+    src: url(./Fonts/attila.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: attila;
+    color: #d1d1d1;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #232025;
+    height: 100%;
+}
+#main{
+    position: relative;
+    background-color: #232025;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#fullscnav{
+    height: 100%;
+    width: 100%;
+    background-color: #cecece;
+    position: absolute;
+    top: -100%;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+    color: #222;
+    z-index: 999;
+}
+#fullscnav h1{
+    padding: 110px 80px;
+    font-size: 12vw;
+    color: #2B2B2B;
+}
+#fullscnav #opt{
+    height: 45vh;
+    width: 45vw;
+    margin-left: 6.5vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: -15vh;
+    flex-wrap: wrap;
+}
+#opt h4 {
+    font-size: 1.8vw;
+    font-family: 'montserrat';
+    color: #2B2B2B;
+    margin-bottom: 2.2vh;
+    font-weight: 500;
+    cursor: pointer;
+    width: 15vw;
+}
+#nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 999;
+    height: 100px;
+    padding: 0px 75px;
+}
+#nav h2{
+    font-size: 13px;
+    letter-spacing: 7px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#nav h3{
+    font-size: 14px;
+    letter-spacing: 7px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#nav h3 span{
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#menubars{
+    height: 1.6vh;
+    width: 2.4vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+}
+#mline1{
+    height: 0.3vh;
+    width: 80%;
+    background-color: #cecece;
+    transform-origin: 0 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#mline2{
+    height: 0.3vh;
+    width: 45%;
+    background-color: #cecece;
+    transform-origin: 0 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#page1{
+    min-height: 88vh;
+    width: 100vw;
+    position: relative;
+}
+#page1 h1{
+    font-size: 13vw;
+    position: absolute;
+    left: 5%;
+    top: 21.08%;
+    letter-spacing: 1.2vw;
+}
+#page1 h2{
+    position: absolute;
+    left: 20%;
+    font-size: 3vw;
+    top: 63%;
+    width: 33%;
+    line-height: 2.87vw;
+    opacity: .8;
+}
+#page1 h3{
+    width: 10%;
+    font-size: 0.9vw;
+    position: absolute;
+    right: 17.7%;
+    top: 66%;
+    opacity: .8;
+    line-height: 1.09vw;
+}
+#page2 img{
+    height: 100%;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    transform: scale(1);
+}
+#page2{
+    margin-top: 6vh;
+    position: relative;
+    padding-bottom: 8vh;
+}
+#page2 h1{
+    font-size: 3.4rem;
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: right bottom;
+    transform: rotateX(-15.8273deg);
+    opacity: 0;
+}
+.h11{
+    margin-top: 34vh;
+}
+#page2 h1 span{
+    font-family: dancing script;
+}
+#page3{
+    position: relative;
+    background-color: #232025;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7vh;
+    height: 110vh;
+}
+#page3 h1{
+    font-size: 8.7vh;
+    position: absolute;
+    top: 19vh;
+}
+#page3 #product{
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    background-color: red;
+}
+.products{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    position: absolute;
+    box-shadow: 0px 0px 15px #232025;
+    top: 40vh;
+}
+.products img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#product1{
+    left: 19vw;
+    top: 41.5vh;
+    height: 37vh;
+    z-index: 9;
+}
+#product2{
+    left: 30vw;
+    top: 37vh;
+    height: 45vh;
+    z-index: 10;
+}
+#product3{
+    top: 35vh;
+    left: 41.8vw;
+    height: 50.5vh;
+    z-index: 11;
+}
+#product4{
+    left: 56.6vw;
+    top: 38vh;
+    height: 45vh;
+    z-index: 10;
+}
+#product5{
+    left: 70.4vw;
+    top: 41.5vh;
+    height: 37vh;
+    z-index: 9;
+}
+#page4{
+    position: relative;
+    height: 62vh;
+    width: 100vw;
+}
+#page4 h1{
+    font-size: 8vw;
+    padding: 0 5vw;
+    margin-top: -3.5vh;
+    opacity: 1;
+}
+#page5{
+    position: relative;
+    height: 130vh;
+    width: 100vw;
+}
+#page5elems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    top: 0%;
+}
+#page5elems #page5elem1{
+    width: 70%;
+    height: 100%;
+    padding: 5vh 5vw;
+    border-top: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+}
+#page5elem1 h1{
+    font-size: 8.5vh;
+}
+#page5elems #page5elem2{
+    width: 30%;
+    height: 100%;
+    padding: 8vh 3vw;
+    font-size: 2.7vh;
+    border-top: 1px solid #d1d1d1;
+    border-left: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+}
+#page5content{
+    width: 100vw;
+    height: 77%;
+    padding: 20vh 20vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./Assets/talastar.gif);
+}
+#page5content #content1 h1{
+    font-size: 7.5vh;
+    width: 100%;
+}
+#page5content #content1 h2{
+    font-size: 10vh;
+    font-family: dancing script;
+    margin-left: 13vw;
+    margin-top: -4vh;
+    margin-bottom: 5vh;
+}
+#page5content #content2 h2{
+    width: 36%;
+    font-size: 2.2vh;
+    margin-left: 21vw;
+    margin-bottom: 17vh;
+}
+#page5content #content3{
+    text-align: center;
+}
+#page6 h1{
+    font-size: 10vw;
+    line-height: 20vh;
+    cursor: default;
+}
+#page6 h1 .one1{
+    color: transparent;
+    -webkit-text-stroke: 1px #909091;
+}
+#page6 #slider1{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#page6 #slider1::-webkit-scrollbar{
+    display: none;
+}
+#page6 #slider2{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#page6 #slider2::-webkit-scrollbar{
+    display: none;
+}
+#page6 #slider2 h1{
+    transform: translateX(-100%);
+}
+#page7{
+    height: 100vh;
+    width: 100vw;
+    padding: 100px 50px;
+    text-align: center;
+}
+#page7 h3{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.6vw;
+    width: 35%;
+}
+#page7 h3 span{
+    font-size: 3.3vw;
+    font-family: dancing script;
+}
+#page7elems{
+    height: 55vh;
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+#page7elems #elem1{
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page7elems #elem1 h1{
+    position: relative;
+    z-index: 99;
+}
+#page7elems #elem1 img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: 9;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+    will-change: transform;
+    transform: rotate(15deg);
+}
+#page7elems #elem2{
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page7elems #elem2 h1{
+    position: relative;
+    z-index: 99;
+}
+#page7elems #elem2 img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 5s;
+    will-change: transform;
+    transform: rotate(15deg);
+}
+#page8{
+    height: 100vh;
+    position: relative;
+    padding: 10vh 6vw;
+    display: none;
+}
+#line h5 {
+    text-transform: uppercase;
+    font-size: 11px;
+    position: absolute;
+    left: 22vw;
+    top: 8vh;
+}
+#line {
+    height: 2px;
+    width: 30%;
+    background-color: #adadad;
+}
+#mango {
+    margin-top: 12vh;
+}
+.fruits {
+    display: flex;
+    align-items: flex-start;
+    margin: 4vh 0;
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
