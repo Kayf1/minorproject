@@ -1,1 +1,3 @@
 # minorproject
+
+Desktop view only
